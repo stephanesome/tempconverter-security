@@ -17,7 +17,7 @@ class WebController {
     }
 
     @RequestMapping("/")
-    fun home(model: Model): String {
+    fun home(): String {
         return "home"
     }
 
