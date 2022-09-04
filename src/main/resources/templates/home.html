@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Temperature Converter</title>
-    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <link href="../static/css/style.css" rel="stylesheet"
+          th:href="@{/css/style.css}" />
 </head>
 <body>
 <div>
     <h1>Temperature Converter</h1>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out"/>
+    </form>
     <div th:switch="${error}">
         <p th:case="'FahrenheitFormatError'">
             Wrong value provided for Fahrenheit - must be a number
