@@ -28,8 +28,8 @@ class WebController {
         @RequestParam(value = "operation", required = false) operation: String,
         model: Model
     ): String {
-        var celsiusVal: Double
-        var fahrenheitVal: Double
+        val celsiusVal: Double
+        val fahrenheitVal: Double
         when (operation) {
             "CtoF" ->
                 try {
